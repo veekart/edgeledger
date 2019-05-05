@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0.75rem 0;
+}
+
+ul{
+    list-style: none;
+}
+
+/*utility*/
+.textprimary{
+    color: #93cb52;
+}
+
+lheading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: none;
+    padding: 0.5rem 2rem;
+    border: #93cb52 1px solid;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background:#93cb52;
+    border: #93cb52 1px solid;
+    border-radius: 5px;
+    transition: all 1s ease-in-out 1s;
+}
+
+.btndark{
+    background: #333;
+    color: #fff;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+
+.textcenter{
+    text-align: center;
+}
+
+mheading{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.py1{padding: 1.5rem 0;}
+.py2{padding: 2rem 0;}
+.py3{padding: 3rem 0;}
+
+.p1{padding: 1.5rem ;}
+.p2{padding: 2rem ;}
+.p3{padding: 3rem ;}
+
+.bglight{
+    background: #f4f4f4;
+    color: #333
+}
+
+.bgdark{
+    background: #333;
+    color: #fff;
+}
+
+.bgprimary{
+    background: #93cb52;
+    color: #fff;
+}
+
+
+/*Navbar*/
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    justify-content: space-around;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a{
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover{
+    background: #93cb52;
+    border-radius: 5px;
+}
+
+
+/*showcase*/
+
+#showcase{
+    background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcasecontent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    position: absolute;
+    top: 60;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#showcase h1{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+/*what we do*/
+
+#what .items{
+    display: flex;
+    padding: 1rem;
+}
+
+#what .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+/*who we are*/
+#who{
+    display: flex;
+}
+
+#who div{
+    flex: 1; 
+}
+
+#who .whoimg{
+    background: url('../img/people.jpg') no-repeat center
+    center/cover;
+}
+
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+/*cliets*/
+#clients .items{
+    display: flex;
+}
+
+#clients .items img{
+    display: block;
+    margin:auto;
+    width: 60%;
+}
+/*contact*/
+#contact{
+    display: flex;
+}
+
+#contact .map, #contact .contactform{
+    flex: 1;
+}
+
+#contact .contactform .formgroup{
+    margin: 0.75rem;
+}
+
+#contact .contactform label{
+    display: block;
+}
+
+#contact .contactform input,
+#contact .contactform textarea{
+    width: 100%;
+    padding: 0.5rem;
+
+}
